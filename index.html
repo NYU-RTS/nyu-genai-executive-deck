@@ -482,6 +482,34 @@
       margin-bottom: 6px;
       color: var(--ink);
     }
+    .slide[data-title="Recommended Next Steps"] .slide-title {
+      margin-bottom: 14px;
+    }
+    .slide[data-title="Recommended Next Steps"] .slide-title .subline {
+      max-width: 78ch;
+      font-size: 0.95rem;
+      line-height: 1.42;
+    }
+    .slide[data-title="Recommended Next Steps"] .decision-grid {
+      grid-template-columns: 1fr;
+      gap: 12px;
+      margin-top: 10px;
+    }
+    .slide[data-title="Recommended Next Steps"] .decision {
+      padding: 14px 16px;
+      border-left-width: 5px;
+      border-radius: 0 18px 18px 0;
+    }
+    .slide[data-title="Recommended Next Steps"] .decision strong {
+      margin-bottom: 5px;
+      font-size: 0.98rem;
+      line-height: 1.24;
+    }
+    .slide[data-title="Recommended Next Steps"] .decision {
+      font-size: 0.94rem;
+      line-height: 1.42;
+      color: var(--muted);
+    }
     .survey-panel {
       position: relative;
       overflow: hidden;
@@ -1460,25 +1488,33 @@
       <div class="panel">
         <div class="slide-title">
           <div class="kicker">Recommended Next Steps</div>
-          <h2>What NYU should decide next.</h2>
-          <p class="subline">The feedback in this deck points to an architecture question as much as a support question: how NYU stays current, what it owns directly, what it sources through vendors, and what support layer sits on top.</p>
+          <h2>What leadership can do next.</h2>
+          <p class="subline">The portfolio, researcher feedback, and peer-university patterns point to a small set of practical moves that would help NYU stay current, increase usage, and keep researchers working through institutional pathways.</p>
         </div>
         <div class="decision-grid">
           <article class="decision">
-            <strong>Continuously reevaluate the architecture stack</strong>
-            The AI landscape is moving quickly enough that NYU should treat platform design as an ongoing review function, not a one-time decision.
+            <strong>Invest in customer success, not only platform operations</strong>
+            Add ongoing office hours, workshops, consultations, and lightweight follow-up so researchers have support after first access, similar to Harvard's <a href="https://its.gse.harvard.edu/services/gen-ai" target="_blank" rel="noreferrer">Generative AI Support</a> model and Stanford's <a href="https://uit.stanford.edu/service/ai-catalyst" target="_blank" rel="noreferrer">AI Catalyst</a> consultation layer.
           </article>
           <article class="decision">
-            <strong>Keep institutional options current</strong>
-            PI feedback suggests that even a short lag in models, tooling, or workflows can disrupt active research work and weaken NYU's position relative to peers.
+            <strong>Keep the institutional stack current</strong>
+            Treat model availability, vendor changes, routing, and workflow updates as a standing review function. PI feedback suggests that even a short lag can affect active research work.
           </article>
           <article class="decision">
-            <strong>Reduce pressure toward shadow solutions</strong>
-            If institutional options fall behind, researchers will work around them through personal API keys, ad hoc tools, or local solutions that sit outside shared governance.
+            <strong>Separate the offering into clear layers</strong>
+            Distinguish broad-access tools, research and developer workflows, and higher-touch implementation support so researchers know where to start and when to escalate, following patterns visible in Harvard's <a href="https://www.huit.harvard.edu/ai-sandbox" target="_blank" rel="noreferrer">AI Sandbox</a> and Stanford's <a href="https://uit.stanford.edu/service/aiplayground" target="_blank" rel="noreferrer">AI Playground</a>.
           </article>
           <article class="decision">
-            <strong>Pair the platform with standing research support</strong>
-            The platform layer needs applied AI support for implementation, proposal development, evaluation, and domain-specific collaboration with researchers.
+            <strong>Add a secure pathway for higher-risk data</strong>
+            A low/medium-risk-only model will push serious research teams off the institutional path. Yale's <a href="https://ai.yale.edu/yales-ai-tools-and-resources/clarity-platform" target="_blank" rel="noreferrer">Clarity Platform</a> supports low, medium, and most high-risk data except ePHI, Harvard's <a href="https://www.huit.harvard.edu/ai-sandbox" target="_blank" rel="noreferrer">AI Sandbox</a> supports up to Level 3 confidential data, and Princeton routes restricted work into <a href="https://researchcomputing.princeton.edu/systems/secure-research-infrastructure" target="_blank" rel="noreferrer">Citadel</a>.
+          </article>
+          <article class="decision">
+            <strong>Use vendors strategically, but keep institutional control points</strong>
+            Peer schools are blending institutional layers with vendor and open-source components rather than building everything from scratch. Columbia's <a href="https://www.cuit.columbia.edu/content/ai-services" target="_blank" rel="noreferrer">CHAT</a> is built on LibreChat and paired with vendor tools, Princeton's <a href="https://researchcomputing.princeton.edu/support/knowledge-base/ai-sandbox" target="_blank" rel="noreferrer">AI Sandbox</a> is an institution-operated secure environment for model experimentation, and Yale's <a href="https://ai.yale.edu/yales-ai-tools-and-resources/clarity-platform" target="_blank" rel="noreferrer">Clarity Platform</a> provides access to models from OpenAI, Anthropic, and Google.
+          </article>
+          <article class="decision">
+            <strong>Add a grants and proposal lane</strong>
+            Support opportunity discovery, technical framing, prototypes, and proposal development earlier so promising research ideas connect more directly to funding.
           </article>
         </div>
       </div>
