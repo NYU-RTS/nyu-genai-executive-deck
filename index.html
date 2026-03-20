@@ -943,23 +943,23 @@
       background: linear-gradient(180deg, rgba(250, 252, 255, 0.98), rgba(255, 252, 248, 0.97));
       border: 1px solid rgba(29, 78, 137, 0.14);
     }
-    .slide[data-title="Tri-State Platforms"] .slide-title {
+    .slide[data-title="Peer AI Platforms"] .slide-title {
       margin-bottom: 10px;
     }
-    .slide[data-title="Tri-State Platforms"] .panel {
+    .slide[data-title="Peer AI Platforms"] .panel {
       padding-top: 28px;
       padding-bottom: 28px;
     }
-    .slide[data-title="Tri-State Platforms"] .slide-title .kicker {
+    .slide[data-title="Peer AI Platforms"] .slide-title .kicker {
       margin-bottom: 6px;
       font-size: 0.76rem;
     }
-    .slide[data-title="Tri-State Platforms"] .slide-title h2 {
+    .slide[data-title="Peer AI Platforms"] .slide-title h2 {
       font-size: clamp(2.1rem, 4vw, 3.5rem);
       line-height: 1.04;
       max-width: 42ch;
     }
-    .slide[data-title="Tri-State Platforms"] .slide-title .subline {
+    .slide[data-title="Peer AI Platforms"] .slide-title .subline {
       margin-top: 6px;
       font-size: 0.88rem;
       line-height: 1.28;
@@ -972,7 +972,7 @@
       line-height: 1.45;
       max-width: 72ch;
     }
-    .slide[data-title="Tri-State Platforms"] .landscape-note {
+    .slide[data-title="Peer AI Platforms"] .landscape-note {
       margin-bottom: 8px;
       font-size: 0.88rem;
       line-height: 1.28;
@@ -984,7 +984,8 @@
       gap: 10px;
       margin-bottom: 14px;
     }
-    .slide[data-title="Tri-State Platforms"] .pattern-row {
+    .slide[data-title="Peer AI Platforms"] .pattern-row {
+      grid-template-columns: 1fr;
       gap: 8px;
       margin-bottom: 10px;
     }
@@ -994,7 +995,7 @@
       background: rgba(255, 255, 255, 0.9);
       border: 1px solid rgba(29, 78, 137, 0.12);
     }
-    .slide[data-title="Tri-State Platforms"] .pattern-card {
+    .slide[data-title="Peer AI Platforms"] .pattern-card {
       padding: 12px 14px;
       border-radius: 18px;
     }
@@ -1004,7 +1005,7 @@
       color: var(--ink);
       font-size: 0.98rem;
     }
-    .slide[data-title="Tri-State Platforms"] .pattern-card strong {
+    .slide[data-title="Peer AI Platforms"] .pattern-card strong {
       margin-bottom: 4px;
       font-size: 0.94rem;
     }
@@ -1014,7 +1015,7 @@
       font-size: 0.9rem;
       line-height: 1.4;
     }
-    .slide[data-title="Tri-State Platforms"] .pattern-card p {
+    .slide[data-title="Peer AI Platforms"] .pattern-card p {
       font-size: 0.84rem;
       line-height: 1.28;
     }
@@ -1491,31 +1492,32 @@
       </div>
     </section>
 
-    <section class="slide" data-title="Tri-State Platforms">
+    <section class="slide" data-title="Peer AI Platforms">
       <div class="panel landscape-panel">
         <div class="slide-title">
           <div class="kicker">Architecture Choices</div>
           <h2>Peers are making different AI architecture choices</h2>
-          <p class="subline">Across peers, the difference is where each institution builds versus buys: interface, sandbox, enterprise stack, or gateway. NYU uses Portkey at the gateway layer.</p>
+          <p class="subline">Across peer institutions, the difference is where each university builds, curates, or governs: interface, secure sandbox, platform layer, licensed tool set, or gateway control layer. NYU currently leans toward the gateway model.</p>
         </div>
         <div class="pattern-row">
           <article class="pattern-card">
-            <strong>In-house interface layer</strong>
-            <p><strong>CHAT</strong> at Columbia and <strong>Clarity Platform</strong> at Yale are institution-defined front doors.</p>
-          </article>
-          <article class="pattern-card">
-            <strong>Institution-operated research layer</strong>
-            <p><strong>AI Sandbox</strong> at Princeton and <strong>AI Gateway</strong> at Cornell support secure experimentation and development.</p>
-          </article>
-          <article class="pattern-card">
-            <strong>Vendor-led stack or gateway</strong>
-            <p><strong>Copilot Chat</strong>, <strong>Gemini</strong>, and <strong>NotebookLM</strong> at Rutgers; <strong>Portkey</strong> at NYU.</p>
+            <strong>Visible pattern across peers</strong>
+            <p>Peer schools are clustering around three approaches: institution-built interfaces and platforms such as <strong>CHAT</strong> at Columbia and <strong>Clarity</strong> at Yale; secure sandbox or experimentation layers such as <strong>AI Sandbox</strong> at Harvard and Princeton and the <strong>Cornell AI Platform</strong>; and centrally licensed tools or gateway control layers such as Rutgers&rsquo; approved tool set and NYU&rsquo;s <strong>Portkey</strong> gateway.</p>
           </article>
         </div>
         <div class="landscape-columns">
           <article class="landscape-card">
-            <h3>Products and architecture choices</h3>
+            <h3>Peer platforms and architecture choices</h3>
             <div class="uni-table">
+              <div class="uni-row">
+                <div class="uni-name">Harvard</div>
+                <div class="uni-desc">
+                  <div class="platform-line">
+                    <a class="platform-chip" href="https://www.huit.harvard.edu/ai-sandbox" target="_blank" rel="noreferrer">AI Sandbox</a>
+                  </div>
+                  <div class="platform-note">Institution-operated secure sandbox with a single interface to approved models; Harvard positions it for experimentation and notes support for up to Level 3 confidential data.</div>
+                </div>
+              </div>
               <div class="uni-row">
                 <div class="uni-name">Columbia</div>
                 <div class="uni-desc">
@@ -1523,7 +1525,7 @@
                     <a class="platform-chip" href="https://www.cuit.columbia.edu/content/ai-services" target="_blank" rel="noreferrer">CHAT</a>
                     <a class="platform-chip" href="https://www.cuit.columbia.edu/content/ai-services" target="_blank" rel="noreferrer">LibreChat</a>
                   </div>
-                  <div class="platform-note">Institution-built chat layer on an open-source base, paired with ChatGPT Education, Gemini, NotebookLM, and APIs.</div>
+                  <div class="platform-note">Institution-built chat layer on an open-source base, positioned as Columbia&rsquo;s customizable AI front door and paired with other university-provided AI services.</div>
                 </div>
               </div>
               <div class="uni-row">
@@ -1532,7 +1534,7 @@
                   <div class="platform-line">
                     <a class="platform-chip" href="https://researchcomputing.princeton.edu/support/knowledge-base/ai-sandbox" target="_blank" rel="noreferrer">AI Sandbox</a>
                   </div>
-                  <div class="platform-note">Institution-operated secure environment with chat and APIs; Princeton describes the underlying AI services as Microsoft-managed.</div>
+                  <div class="platform-note">Institution-operated environment for AI experimentation with chat and APIs; Princeton describes the underlying AI services as Microsoft-managed.</div>
                 </div>
               </div>
               <div class="uni-row">
@@ -1541,17 +1543,18 @@
                   <div class="platform-line">
                     <a class="platform-chip" href="https://ai.yale.edu/yales-ai-tools-and-resources/clarity-platform" target="_blank" rel="noreferrer">Clarity Platform</a>
                   </div>
-                  <div class="platform-note">Custom-built institutional platform giving secure access to approved frontier models.</div>
+                  <div class="platform-note">Secure, scalable institutional platform with multiple models, custom agents, and API access for approved use cases rather than a basic chat-only layer.</div>
                 </div>
               </div>
               <div class="uni-row">
                 <div class="uni-name">Cornell</div>
                 <div class="uni-desc">
                   <div class="platform-line">
+                    <a class="platform-chip" href="https://ai.cornell.edu/research/" target="_blank" rel="noreferrer">Cornell AI Platform</a>
                     <a class="platform-chip" href="https://ai.cornell.edu/research/" target="_blank" rel="noreferrer">AI Gateway</a>
                     <a class="platform-chip" href="https://ai.cornell.edu/research/" target="_blank" rel="noreferrer">AI Agent Studio</a>
                   </div>
-                  <div class="platform-note">Institution-built platform approach for multi-model access, agent development, and governed application deployment.</div>
+                  <div class="platform-note">Cornell frames this as a secure, private platform in pilot, combining AI Gateway for multi-model access with AI Agent Studio for agent development.</div>
                 </div>
               </div>
               <div class="uni-row">
@@ -1562,7 +1565,7 @@
                     <a class="platform-chip" href="https://it.rutgers.edu/ai/" target="_blank" rel="noreferrer">Gemini</a>
                     <a class="platform-chip" href="https://it.rutgers.edu/ai/" target="_blank" rel="noreferrer">NotebookLM</a>
                   </div>
-                  <div class="platform-note">Vendor-tool strategy centered on licensed enterprise products rather than a university-built platform layer.</div>
+                  <div class="platform-note">Institution-curated tool set centered on approved vendor products and subscriptions, rather than a university-built platform layer.</div>
                 </div>
               </div>
               <div class="uni-row emphasis">
@@ -1572,7 +1575,7 @@
                     <span class="platform-chip vendor">Portkey</span>
                     <span class="platform-chip">LLM Gateway</span>
                   </div>
-                  <div class="platform-note">Vendor-gateway strategy: Portkey sits at the control layer for routing, guardrails, usage visibility, budget controls, and application development.</div>
+                  <div class="platform-note">Vendor-gateway strategy: Portkey sits at the control layer for routing, guardrails, usage visibility, budget controls, and application development rather than serving as a full user-facing platform.</div>
                 </div>
               </div>
             </div>
@@ -1580,12 +1583,12 @@
           <article class="landscape-card">
             <h3>What the architecture choices show</h3>
             <ul class="takeaway-list">
-              <li>Some peers are building their own user-facing AI layer.</li>
-              <li>Some are operating secure research environments on top of vendor-managed model services.</li>
-              <li>Some are standardizing on licensed enterprise tools instead of building a local platform.</li>
-              <li>NYU's current model is different: a vendor gateway inside institutional infrastructure.</li>
+              <li>Peer institutions are not converging on one architecture; some emphasize front-end platforms, some secure sandboxes, and some centrally licensed tools.</li>
+              <li>Harvard, Princeton, Yale, and Cornell all show a stronger secure-environment or platform layer than a simple chat front door.</li>
+              <li>Rutgers is the clearest example here of an institution-curated vendor tool set rather than a local platform build.</li>
+              <li>NYU&rsquo;s current differentiator is governance and routing at the gateway layer, not a single institutional front-end.</li>
             </ul>
-            <div class="landscape-close">Across the region, the direction is similar: governed access for general users, plus a second layer for research and application development. The difference is whether that layer is built in house, assembled from vendors, or both.</div>
+            <div class="landscape-close">Across peers, the common direction is governed access for general users plus a second layer for research and application development. The real distinction is whether that second layer is built in house, assembled from vendors, or managed as a gateway.</div>
           </article>
         </div>
       </div>
