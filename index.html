@@ -14,6 +14,7 @@
       --line: rgba(24, 50, 74, 0.14);
       --gold: #d8b874;
       --blue: #1d4e89;
+      --orange: #c86d2a;
       --red: #d63a52;
       --shadow: 0 24px 70px rgba(24, 50, 74, 0.12);
     }
@@ -562,7 +563,12 @@
       grid-column: 1 / -1;
       margin-top: 2px;
       width: fit-content;
-      border-bottom-color: transparent;
+      color: var(--orange);
+      border-bottom-color: rgba(200, 109, 42, 0.28);
+    }
+    .slide[data-title="Case Studies"] .proof-card a:hover,
+    .slide[data-title="Additional Case Studies"] .proof-card a:hover {
+      border-bottom-color: var(--orange);
     }
     .slide[data-title="Additional Case Studies"] .columns {
       grid-template-columns: 1fr;
