@@ -248,6 +248,14 @@
       color: var(--muted);
       line-height: 1.4;
     }
+    .stat-card-link {
+      display: block;
+      color: inherit;
+      text-decoration: none;
+    }
+    .stat-card-link:hover .label {
+      color: var(--orange);
+    }
     .slide-title {
       margin-bottom: 22px;
     }
@@ -1427,8 +1435,10 @@
             <div class="label">total researcher requests since the first day of GenAI API access at NYU</div>
           </article>
           <article class="stat-card">
-            <div class="value">15</div>
-            <div class="label">active requests for custom AI solutions, expertise, and consulting</div>
+            <a class="stat-card-link" href="https://docs.google.com/spreadsheets/d/1tRcLy607SpEgfsCWASLqxQ7dPD-iUtScOVPfvDeX-6U/edit?gid=1375784882#gid=1375784882" target="_blank" rel="noopener">
+              <div class="value">15</div>
+              <div class="label">active requests for custom AI solutions, expertise, and consulting</div>
+            </a>
           </article>
           <article class="stat-card">
             <div class="value">4</div>
