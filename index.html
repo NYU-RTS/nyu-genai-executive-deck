@@ -237,6 +237,10 @@
       border: 1px solid var(--line);
       box-shadow: inset 0 1px 0 rgba(255,255,255,0.6);
     }
+    .stat-card-positive {
+      background: linear-gradient(180deg, rgba(167, 226, 205, 0.54), rgba(248, 255, 251, 0.98));
+      border-color: rgba(15, 90, 70, 0.22);
+    }
     .stat-card-alert {
       background: linear-gradient(180deg, rgba(246, 214, 222, 0.62), rgba(255, 248, 248, 0.98));
       border-color: rgba(214, 58, 82, 0.24);
@@ -254,6 +258,12 @@
       font-size: 0.95rem;
       color: var(--muted);
       line-height: 1.4;
+    }
+    .stat-card-positive .value {
+      color: #0f5a46;
+    }
+    .stat-card-positive .label {
+      color: #36594d;
     }
     .stat-card-alert .label {
       color: #7c4550;
@@ -1450,7 +1460,7 @@
               <div class="label">active requests for custom AI solutions, expertise, and consulting</div>
             </a>
           </article>
-          <article class="stat-card">
+          <article class="stat-card stat-card-positive">
             <a class="stat-card-link" href="https://nyu-rts.github.io/andi-shehu-portfolio/" target="_blank" rel="noopener">
               <div class="value">6</div>
               <div class="label">custom AI products built for researchers to support workflow and research tasks</div>
